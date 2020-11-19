@@ -1,6 +1,6 @@
 # problem: https://leetcode.com/problems/merge-intervals/submissions/
-# Runtime: 84 ms, faster than 70.85% of Python3 online submissions for Merge Intervals.
-# Memory Usage: 15.7 MB, less than 66.66% of Python3 online submissions for Merge Intervals.
+# Runtime: 76 ms, faster than 95.96% of Python3 online submissions for Merge Intervals.
+# Memory Usage: 15.8 MB, less than 27.19% of Python3 online submissions for Merge Intervals.
 
 from typing import List
 
