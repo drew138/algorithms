@@ -3,7 +3,6 @@
 # Memory Usage: 15.6 MB, less than 50.20% of Python3 online submissions for Populating Next Right Pointers in Each Node.
 
 
-"""
 # Definition for a Node.
 class Node:
     def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
@@ -11,7 +10,6 @@ class Node:
         self.left = left
         self.right = right
         self.next = next
-"""
 
 
 class Solution:

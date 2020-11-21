@@ -1,7 +1,8 @@
-from typing import List
 # problem: https://leetcode.com/problems/longest-mountain-in-array/submissions/
 # Runtime: 188 ms, faster than 18.37% of Python3 online submissions for Longest Mountain in Array.
 # Memory Usage: 15.5 MB, less than 11.78% of Python3 online submissions for Longest Mountain in Array.
+
+from typing import List
 
 
 class Solution:

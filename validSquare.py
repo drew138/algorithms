@@ -2,6 +2,9 @@
 # Runtime: 24 ms, faster than 98.00% of Python3 online submissions for Valid Square.
 # Memory Usage: 14.1 MB, less than 99.78% of Python3 online submissions for Valid Square.
 
+from typing import List
+
+
 class Solution:
     def validSquare(self, p1: List[int], p2: List[int], p3: List[int], p4: List[int]) -> bool:
 

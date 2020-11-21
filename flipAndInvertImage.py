@@ -2,6 +2,9 @@
 # Runtime: 52 ms, faster than 53.65% of Python3 online submissions for Flipping an Image.
 # Memory Usage: 14.1 MB, less than 100.00% of Python3 online submissions for Flipping an Image.
 
+from typing import List
+
+
 class Solution:
     def flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
         if (len(A[0]) % 2) == 0:

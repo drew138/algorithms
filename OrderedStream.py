@@ -2,6 +2,9 @@
 # Runtime: 316 ms, faster than 50.00% of Python3 online submissions for Design an Ordered Stream.
 # Memory Usage: 15 MB, less than 100.00% of Python3 online submissions for Design an Ordered Stream.
 
+from typing import List
+
+
 class OrderedStream:
 
     def __init__(self, n: int):

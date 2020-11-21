@@ -2,6 +2,9 @@
 # Runtime: 56 ms, faster than 24.23% of Python3 online submissions for Search in Rotated Sorted Array II.
 # Memory Usage: 15 MB, less than 12.60% of Python3 online submissions for Search in Rotated Sorted Array II.
 
+from typing import List
+
+
 class Solution:
     def search(self, nums: List[int], target: int) -> bool:
         l, r = 0, len(nums) - 1

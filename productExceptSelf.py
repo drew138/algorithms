@@ -1,7 +1,9 @@
-
 # problem: https://leetcode.com/problems/product-of-array-except-self/submissions/
 # Runtime: 220 ms, faster than 65.12% of Python3 online submissions for Product of Array Except Self.
 # Memory Usage: 21 MB, less than 50.74% of Python3 online submissions for Product of Array Except Self.
+
+from typing import List
+
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:

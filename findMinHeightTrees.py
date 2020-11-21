@@ -1,6 +1,7 @@
 # problem: https://leetcode.com/problems/minimum-height-trees/submissions/
 # Runtime: 240 ms, faster than 72.70% of Python3 online submissions for Minimum Height Trees.
 # Memory Usage: 18.1 MB, less than 5.72% of Python3 online submissions for Minimum Height Trees.
+from typing import List
 
 
 class Solution:

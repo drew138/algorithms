@@ -2,6 +2,9 @@
 # Runtime: 1224 ms, faster than 50.00% of Python3 online submissions for Minimum Operations to Reduce X to Zero.
 # Memory Usage: 36.6 MB, less than 50.00% of Python3 online submissions for Minimum Operations to Reduce X to Zero.
 
+from typing import List
+
+
 class Solution:
 
     def minOperations(self, nums: List[int], x: int) -> int:

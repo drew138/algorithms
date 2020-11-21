@@ -3,10 +3,12 @@
 # Memory Usage: 18.8 MB, less than 6.22% of Python online submissions for Insertion Sort List.
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution(object):
     def insertionSortList(self, head):
         """

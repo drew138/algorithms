@@ -4,11 +4,13 @@
 # Memory Usage: 15.7 MB, less than 96.11% of Python3 online submissions for Binary Tree Tilt.
 
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 class Solution:
 
     def tilt(self, node):
