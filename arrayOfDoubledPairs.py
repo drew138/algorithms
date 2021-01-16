@@ -23,3 +23,35 @@ class Solution:
                     return False
 
         return True
+
+
+class Solution:
+    def getConnections(self, element):
+        connections = []
+        for i in range(4):
+            el = [s for s in element]
+            el[i] = str(int(el[i]) + 1) if el[i] != "9" else "0"
+            connections.append("".join(el))
+            el[i] = str(int(el[i]) - 1) if el[i] != "1" else "0"
+            connections.append("".join(el))
+        return connections
+
+    def openLock(self, deadends: List[str], target: str) -> int:
+        from collections import deque
+        deadends = set(deadends)
+        queue = deque()
+        queue.append("0000")
+        layer = 0
+        while queue:
+            tmp = deque()
+            while queue:
+                element = queue.popleft()
+                if element == target:
+                    return layer
+                connections = self.getConnections(element)
+                for connection in connections:
+                    if not connection in deadends:
+                        tmp.append(connection)
+            layer += 1
+            queue = tmp
+        return -1
