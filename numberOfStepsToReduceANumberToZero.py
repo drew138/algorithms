@@ -12,5 +12,4 @@ class Solution:
             else:
                 num = num // 2 + num % 2
             steps += 1
-
         return steps
