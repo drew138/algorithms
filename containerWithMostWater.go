@@ -2,7 +2,7 @@
 // Runtime: 16 ms, faster than 96.11% of Go online submissions for Container With Most Water.
 // Memory Usage: 5.9 MB, less than 19.19% of Go online submissions for Container With Most Water.
 
-package main
+package algorithms
 
 import "math"
 

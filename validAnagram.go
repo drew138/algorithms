@@ -1,7 +1,7 @@
 // problem: https://leetcode.com/problems/valid-anagram/
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Valid Anagram.
 // Memory Usage: 3 MB, less than 100.00% of Go online submissions for Valid Anagram.
-package main
+package algorithms
 
 func isAnagram(s string, t string) bool {
 	count := [26]int{}

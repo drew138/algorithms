@@ -2,7 +2,7 @@
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Copy List with Random Pointer.
 // Memory Usage: 3.3 MB, less than 76.39% of Go online submissions for Copy List with Random Pointer.
 
-package main
+package algorithms
 
 // Node for linked list
 type Node struct {
