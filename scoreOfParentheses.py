@@ -13,5 +13,4 @@ class Solution:
                 answer = 0
             else:
                 answer = stack.pop() + max(answer * 2, 1)
-            print(stack, answer)
         return answer
