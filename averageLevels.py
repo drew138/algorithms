@@ -2,8 +2,10 @@
 # Runtime: 44 ms, faster than 91.19% of Python3 online submissions for Average of Levels in Binary Tree.
 # Memory Usage: 16.4 MB, less than 41.77% of Python3 online submissions for Average of Levels in Binary Tree.
 
-
+from typing import List
 # Definition for a binary tree node.
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
