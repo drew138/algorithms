@@ -2,7 +2,7 @@
 // Runtime: 0 ms, faster than 100.00% of Go online submissions for Longest Valid Parentheses.
 // Memory Usage: 3.5 MB, less than 41.91% of Go online submissions for Longest Valid Parentheses.
 
-package algorithmss
+package algorithms
 
 func maxNum(x int, y int) int {
 	if x > y {
