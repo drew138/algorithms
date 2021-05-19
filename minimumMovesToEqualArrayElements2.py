@@ -2,6 +2,9 @@
 # Runtime: 76 ms, faster than 49.69% of Python3 online submissions for Minimum Moves to Equal Array Elements II.
 # Memory Usage: 15.3 MB, less than 75.16% of Python3 online submissions for Minimum Moves to Equal Array Elements II.
 
+from typing import List
+
+
 class Solution:
     def minMoves2(self, nums: List[int]) -> int:
         answer = 0
