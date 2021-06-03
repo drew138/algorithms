@@ -17,7 +17,6 @@ class Solution:
             x, y = queue.popleft()
             biggest_island += 1
             for a, b in dirs:
-
                 if 0 <= a + x < len(grid) and 0 <= b + y < len(grid[0]) and grid[a + x][b + y] and not (a + x, b + y) in visited:
                     visited.add((a + x, b + y))
                     queue.append((a + x, b + y))
