@@ -7,7 +7,7 @@ from typing import List
 
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        if len(cost) < 2:
+        if len(cost) < 3:
             return min(cost)
         for i in range(2, len(cost)):
             cost[i] = min(cost[i] + cost[i-1], cost[i] + cost[i-2])
