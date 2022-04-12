@@ -5,6 +5,7 @@
 from collections import defaultdict
 import math
 from math import ceil
+from typing import List
 
 class TreeAncestor:
 
