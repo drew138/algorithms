@@ -1,5 +1,10 @@
 #include <bits/stdc++>
 
+// problem: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/
+// Runtime: 3 ms, faster than 99.12% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
+// Memory Usage: 13.7 MB, less than 63.15% of C++ online submissions for Find First and Last Position of Element in Sorted Array.
+
+
 using namespace std;
 
 
