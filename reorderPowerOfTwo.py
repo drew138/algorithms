@@ -1,40 +1,35 @@
 # problem: https: // leetcode.com/problems/reordered-power-of-2/
-# Runtime: 4028 ms, faster than 5.24 % of Python3 online submissions for Reordered Power of 2.
-# Memory Usage: 14.2 MB, less than 76.21 % of Python3 online submissions for Reordered Power of 2.
-from collections import Counter
+# Runtime: 53 ms, faster than 65.24% of Python3 online submissions for Reordered Power of 2.
+# Memory Usage: 13.9 MB, less than 64.17% of Python3 online submissions for Reordered Power of 2.
 
+import math
 
 class Solution:
-    def convertToNum(self, stack):
-        total = 0
-        for num in stack:
-            total *= 10
-            total += num
-        return total
+    def is_answer(self, n, num):
+        if num % 10 == 0: return False
+        counter_n = [0] * 10
+        counter_num = [0] * 10
+        while n:
+            tmp = n % 10
+            n //=10
+            counter_n[tmp] += 1
+        while num:
+            tmp = num % 10
+            num //=10
+            counter_num[tmp] += 1
+        for i in range(10):
+            if counter_n[i] != counter_num[i]:
+                return False
+        return True
 
-    def traverse(self, counter, stack):
-        if self.len == len(stack) and stack[0] != 0:
-            num = self.convertToNum(stack)
-            self.isPowerOfTwo = self.isPowerOfTwo or (
-                num > 0 and (num & (num - 1)) == 0)
-            return
+    def reorderedPowerOf2(self, n: int) -> bool:
+        num = int(math.log10(n))
 
-        for key, val in counter.items():
-            if val > 0 and not self.isPowerOfTwo:
-                stack.append(key)
-                counter[key] -= 1
-                self.traverse(counter, stack)
-                counter[key] += 1
-                stack.pop()
+        cur = math.ceil(math.log2(10** num))
+        while 2 ** cur < 10 ** (num + 1):
+            if self.is_answer(n, 2 ** cur):
+                return True
+            cur += 1
 
-    def reorderedPowerOf2(self, N: int) -> bool:
-        counter = Counter()
-        self.len = 0
-        while N:
-            tmp = N % 10
-            N //= 10
-            counter[tmp] += 1
-            self.len += 1
-        self.isPowerOfTwo = False
-        self.traverse(counter, [])
-        return self.isPowerOfTwo
+
+        return False
