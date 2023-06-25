@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/bin/python3.9",
-    "files.associations": {
-        "algorithm": "cpp"
-    }
-}
